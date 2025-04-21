@@ -20,33 +20,39 @@ function typeEffect() {
 }
 typeEffect();
 
-// Project Navigation
-const projectContainer = document.querySelector('.project-container');
-const leftArrow = document.querySelector('.left-arrow');
-const rightArrow = document.querySelector('.right-arrow');
+// Project Navigation (Carousel Effect)
+const projectContainers = document.querySelectorAll('.project-container');
+const leftArrows = document.querySelectorAll('.left-arrow');
+const rightArrows = document.querySelectorAll('.right-arrow');
 
-let scrollAmount = 0;
+projectContainers.forEach((container, index) => {
+    let scrollAmount = 0;
 
-function moveLeft() {
-    projectContainer.scrollTo({
-        top: 0,
-        left: (scrollAmount -= 300),
-        behavior: 'smooth'
-    });
-    if (scrollAmount < 0) {
-        scrollAmount = 0;
-    }
-}
-
-function moveRight() {
-    if (scrollAmount <= projectContainer.scrollWidth - projectContainer.clientWidth) {
-        projectContainer.scrollTo({
+    function moveLeft() {
+        scrollAmount -= 300;
+        if (scrollAmount < 0) {
+            scrollAmount = 0;
+        }
+        container.scrollTo({
             top: 0,
-            left: (scrollAmount += 300),
+            left: scrollAmount,
             behavior: 'smooth'
         });
     }
-}
 
-leftArrow.addEventListener('click', moveLeft);
-rightArrow.addEventListener('click', moveRight);
+    function moveRight() {
+        const maxScroll = container.scrollWidth - container.clientWidth;
+        scrollAmount += 300;
+        if (scrollAmount > maxScroll) {
+            scrollAmount = maxScroll;
+        }
+        container.scrollTo({
+            top: 0,
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    }
+
+    leftArrows[index].addEventListener('click', moveLeft);
+    rightArrows[index].addEventListener('click', moveRight);
+});
