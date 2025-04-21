@@ -307,3 +307,9 @@ footer .social-icons a {
 footer .social-icons a:hover {
   color: #1ABC9C;
 }
+
+h3{
+  font-size: x-large;
+  font-weight: bold;
+  margin: 2rem;
+}
