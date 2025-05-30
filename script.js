@@ -56,3 +56,24 @@ projectContainers.forEach((container, index) => {
     leftArrows[index].addEventListener('click', moveLeft);
     rightArrows[index].addEventListener('click', moveRight);
 });
+
+// ...existing code...
+
+// Mobile Navbar Dropdown
+const navToggle = document.getElementById('nav-toggle');
+const navMenu = document.getElementById('nav-menu');
+
+if (navToggle && navMenu) {
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+    navToggle.classList.toggle('active');
+  });
+
+  // Optional: Close menu when a link is clicked (for better UX)
+  navMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('show');
+      navToggle.classList.remove('active');
+    });
+  });
+}
