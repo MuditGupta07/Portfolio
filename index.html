@@ -1,225 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="stars"></div>
     <div class="twinkling"></div>
     <header>
-        <nav>
-            <h2>Portfolio</h2>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <h2>Portfolio</h2>
+        <div class="nav-toggle" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul id="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section id="home" class="hero fade-in">
-        <h1>Hi, I'm <span>MUDIT GUPTA</span></h1>
-        <p class="typewriter"></p>
-        <a href="#contact" class="btn">Hire Me</a>
-        <a href="Resume.pdf" class="btn" download>Download Resume</a>
+      <h1>Hi, I'm <span>MUDIT GUPTA</span></h1>
+      <p class="typewriter"></p>
+      <a href="#contact" class="btn">Hire Me</a>
+      <a href="Mudit_Gupta_Resume.pdf" class="btn" download>Download Resume</a>
     </section>
 
     <section id="about" class="about fade-in">
-        <h2>About Me</h2>
-        <p>I am a passionate software developer and problem solver, constantly exploring the intersection of technology and innovation. My journey in full-stack web development (MERN stack) and data structures & algorithms (C++ & Java) has fueled my curiosity to build scalable and impactful solutions.
-        <br><br>
-        My keen interest in AI-powered development pushes me to explore modern tools like GitHub Copilot, ChatGPT, Deepseek, etc for better building which safes time.
-        <br><br>
-        Beyond development, I am dedicated to competitive programming and algorithmic problem-solving, continuously refining my skills through platforms like LeetCode and CodeStudio. My vision is to engineer solutions that enhance user experience and efficiency while staying adaptable to the ever-evolving tech landscape.
-        <br><br>
-        I believe in learning by doing, collaborating with like-minded individuals.</p>
+      <h2>About Me</h2>
+      <p>
+        I am a passionate software developer and problem solver, constantly
+        exploring the intersection of technology and innovation. My journey in
+        web development and data structures & algorithms has fueled my curiosity
+        to build scalable and impactful solutions. <br /><br />
+        My keen interest in AI-powered development pushes me to explore modern
+        tools like GitHub Copilot, ChatGPT, Deepseek, etc for better building.
+        <br /><br />
+        Beyond development, I am dedicated to competitive programming and
+        algorithmic problem-solving, continuously refining my skills through
+        platforms like LeetCode and CodeStudio. My vision is to engineer
+        solutions that enhance user experience and efficiency while staying
+        adaptable to the ever-evolving tech landscape.
+        <br /><br />
+        I believe in learning by doing, collaborating with like-minded
+        individuals.
+      </p>
     </section>
 
     <section id="projects" class="projects fade-in">
-        <h2 style="font-size: xx-large; font-weight: bold;">Projects</h2>
-        <h3>Beginner Level Mini Projects</h3>
-        <div class="project-grid">
-            <button class="arrow left-arrow" onclick="moveLeft()">&#10094;</button>
-            <div class="project-container">
-                <div class="project-card">
-                    <img src="images/project1.jpg" alt="Project 1">
-                    <h3>Stop Watch</h3>
-                    <p>A simple and interactive stopwatch application built using HTML, CSS, and JavaScript. This stopwatch allows you to track time with start, pause, and reset functionality.</p>
-                    <div class="btn-container">
-                        <a href="https://muditgupta07.github.io/Stop-Watch/" class="btn" target="_blank">Demo</a>
-                        <a href="https://github.com/muditgupta07/Stop-Watch" class="btn" target="_blank">Code</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="images/project2.jpg" alt="Project 2">
-                    <h3>Tip Calculator</h3>
-                    <p>A simple tip calculator application built using HTML, CSS, and JavaScript. This app allows users to calculate the tip amount based on the bill total and tip percentage.</p>
-                    <div class="btn-container">
-                        <a href="https://muditgupta07.github.io/Tip-Calculator/" class="btn" target="_blank">Demo</a>
-                        <a href="https://github.com/muditgupta07/Tip-Calculator" class="btn" target="_blank">Code</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="images/project3.jpg" alt="Project 3">
-                    <h3>Rock Paper Scissor Game</h3>
-                    <p>A simple rock-paper-scissor game built using HTML, CSS, and JavaScript. This game allows users to play against the computer.</p>
-                    <div class="btn-container">
-                        <a href="https://muditgupta07.github.io/Rock-Paper-Scissor-Game/" class="btn" target="_blank">Demo</a>
-                        <a href="https://github.com/muditgupta07/Rock-Paper-Scissor-Game" class="btn" target="_blank">Code</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="images/project4.jpg" alt="Project 4">
-                    <h3>Traffic Signal Simulator</h3>
-                    <p>A traffic signal simulator built using HTML, CSS, and JavaScript. This simulator mimics the behavior of a real traffic signal.</p>
-                    <div class="btn-container">
-                        <a href="https://muditgupta07.github.io/Traffic-Signal-Simulator/" class="btn" target="_blank">Demo</a>
-                        <a href="https://github.com/muditgupta07/Traffic-Signal-Simulator" class="btn" target="_blank">Code</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="images/project5.jpg" alt="Project 5">
-                    <h3>Calculator</h3>
-                    <p>A simple calculator application built using HTML, CSS, and JavaScript. This app allows users to perform basic arithmetic operations.</p>
-                    <div class="btn-container">
-                        <a href="https://muditgupta07.github.io/Calculator/" class="btn" target="_blank">Demo</a>
-                        <a href="https://github.com/muditgupta07/Calculator" class="btn" target="_blank">Code</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="images/project6.jpg" alt="Project 6">
-                    <h3>Digital Clock</h3>
-                    <p>A simple digital clock that displays the current date and time, built using HTML, CSS, and JavaScript. The clock updates every second and features a modern, responsive design.</p>
-                    <div class="btn-container">
-                        <a href="https://muditgupta07.github.io/Digital-Clock/" class="btn" target="_blank">Demo</a>
-                        <a href="https://github.com/muditgupta07/Digital-Clock" class="btn" target="_blank">Code</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="images/project7.jpg" alt="Project 7">
-                    <h3>Todo App</h3>
-                    <p>A simple ToDo List application built with HTML, CSS, and JavaScript. This app allows users to add tasks with a due date, view the list of tasks, and delete tasks. The tasks are stored in the browser's local storage to persist data between page reloads.</p>
-                    <div class="btn-container">
-                        <a href="https://muditgupta07.github.io/Todo-App/" class="btn" target="_blank">Demo</a>
-                        <a href="https://github.com/muditgupta07/Todo-APP/" class="btn" target="_blank">Code</a>
-                    </div>
-                </div>
+      <h2 style="font-size: xx-large; font-weight: bold">Projects</h2>
+      <h3>Beginner Level Mini Projects</h3>
+      <div class="project-grid">
+        <button class="arrow left-arrow" onclick="moveLeft()">&#10094;</button>
+        <div class="project-container">
+          <div class="project-card">
+            <img src="images/project1.jpg" alt="Project 1" />
+            <h3>Stop Watch</h3>
+            <p>
+              A simple and interactive stopwatch application built using HTML,
+              CSS, and JavaScript. This stopwatch allows you to track time with
+              start, pause, and reset functionality.
+            </p>
+            <div class="btn-container">
+              <a
+                href="https://muditgupta07.github.io/Stop-Watch/"
+                class="btn"
+                target="_blank"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/muditgupta07/Stop-Watch"
+                class="btn"
+                target="_blank"
+                >Code</a
+              >
             </div>
-            <button class="arrow right-arrow" onclick="moveRight()">&#10095;</button>
-        </div>
-
-        <h3>Intermediate Level Projects</h3>
-        <div class="project-grid">
-            <button class="arrow left-arrow" onclick="moveLeft()">&#10094;</button>
-            <div class="project-container">
-
-                <div class="project-card">
-                    <img src="images/project8.jpg" alt="Project 8">
-                    <h3>Tic Tac Toe Game</h3>
-                    <p>This is a simple yet fun Tic Tac Toe game created using HTML, CSS, and JavaScript. The game allows players to choose between playing against a computer AI or a local player.</p>
-                    <div class="btn-container">
-                        <a href="https://muditgupta07.github.io/Tic-Tac-Toe-Game/" class="btn" target="_blank">Demo</a>
-                        <a href="https://github.com/muditgupta07/Tic-Tac-Toe-Game" class="btn" target="_blank">Code</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="images/project9.jpg" alt="Project 9">
-                    <h3>VirtuPet</h3>
-                    <p>VirtuPet is an interactive virtual pet experience designed to promote emotional well-being and mindfulness. With a dynamic 3D environment and mood-based interactions, VirtuPet offers users a fun and supportive way to care for a virtual companion while tracking their own mental health.</p>
-                    <div class="btn-container">
-                        <a href="https://muditgupta07.github.io/VirtuPet/" class="btn" target="_blank">Demo</a>
-                        <a href="https://github.com/MuditGupta07/VirtuPet" class="btn" target="_blank">Code</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="images/project10.jpg" alt="Project 10">
-                    <h3>HealthyPlate</h3>
-                    <p>A smart, AI-driven recipe recommendation system tailored for your health needs!This project is an AI-powered recipe generator that suggests healthy meals based on medical conditions, allergies, and dietary preferences. It integrates AI, nutrition APIs, and user health data to ensure every meal aligns with individual health requirements.</p>
-                    <div class="btn-container">
-                        <a href="https://health-meal-ai-guide.vercel.app/" class="btn" target="_blank">Demo</a>
-                        <a href="https://github.com/MuditGupta07/health-meal-ai-guide" class="btn" target="_blank">Code</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="images/project11.jpg" alt="Project 11">
-                    <h3>BudgetBuddy</h3>
-                    <p>Budget Buddy is a lightweight, browser-based expense tracker built using HTML, CSS, and JavaScript—designed specifically for students like Raghav who want a clean and simple way to manage their income and expenses. No sign-up, no server, and no complexity—just open your browser and take control of your money!</p>
-                    <div class="btn-container">
-                        <a href="https://muditgupta07.github.io/BudgetBuddy/" class="btn" target="_blank">Demo</a>
-                        <a href="https://github.com/MuditGupta07/BudgetBuddy" class="btn" target="_blank">Code</a>
-                    </div>
-                </div>
+          </div>
+          <div class="project-card">
+            <img src="images/project2.jpg" alt="Project 2" />
+            <h3>Tip Calculator</h3>
+            <p>
+              A simple tip calculator application built using HTML, CSS, and
+              JavaScript. This app allows users to calculate the tip amount
+              based on the bill total and tip percentage.
+            </p>
+            <div class="btn-container">
+              <a
+                href="https://muditgupta07.github.io/Tip-Calculator/"
+                class="btn"
+                target="_blank"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/muditgupta07/Tip-Calculator"
+                class="btn"
+                target="_blank"
+                >Code</a
+              >
             </div>
-            <button class="arrow right-arrow" onclick="moveRight()">&#10095;</button>
+          </div>
+          <div class="project-card">
+            <img src="images/project3.jpg" alt="Project 3" />
+            <h3>Rock Paper Scissor Game</h3>
+            <p>
+              A simple rock-paper-scissor game built using HTML, CSS, and
+              JavaScript. This game allows users to play against the computer.
+            </p>
+            <div class="btn-container">
+              <a
+                href="https://muditgupta07.github.io/Rock-Paper-Scissor-Game/"
+                class="btn"
+                target="_blank"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/muditgupta07/Rock-Paper-Scissor-Game"
+                class="btn"
+                target="_blank"
+                >Code</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="images/project4.jpg" alt="Project 4" />
+            <h3>Traffic Signal Simulator</h3>
+            <p>
+              A traffic signal simulator built using HTML, CSS, and JavaScript.
+              This simulator mimics the behavior of a real traffic signal.
+            </p>
+            <div class="btn-container">
+              <a
+                href="https://muditgupta07.github.io/Traffic-Signal-Simulator/"
+                class="btn"
+                target="_blank"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/MuditGupta07/Traffic-Signal-Simulator"
+                class="btn"
+                target="_blank"
+                >Code</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="images/project5.jpg" alt="Project 5" />
+            <h3>Calculator</h3>
+            <p>
+              A simple calculator application built using HTML, CSS, and
+              JavaScript. This app allows users to perform basic arithmetic
+              operations.
+            </p>
+            <div class="btn-container">
+              <a
+                href="https://muditgupta07.github.io/Calculator/"
+                class="btn"
+                target="_blank"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/muditgupta07/Calculator"
+                class="btn"
+                target="_blank"
+                >Code</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="images/project6.jpg" alt="Project 6" />
+            <h3>Digital Clock</h3>
+            <p>
+              A simple digital clock that displays the current date and time,
+              built using HTML, CSS, and JavaScript. The clock updates every
+              second and features a modern, responsive design.
+            </p>
+            <div class="btn-container">
+              <a
+                href="https://muditgupta07.github.io/Digital-Clock/"
+                class="btn"
+                target="_blank"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/muditgupta07/Digital-Clock"
+                class="btn"
+                target="_blank"
+                >Code</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="images/project7.jpg" alt="Project 7" />
+            <h3>Todo App</h3>
+            <p>
+              A simple ToDo List application built with HTML, CSS, and
+              JavaScript. This app allows users to add tasks with a due date,
+              view the list of tasks, and delete tasks. The tasks are stored in
+              the browser's local storage to persist data between page reloads.
+            </p>
+            <div class="btn-container">
+              <a
+                href="https://muditgupta07.github.io/Todo-App/"
+                class="btn"
+                target="_blank"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/muditgupta07/Todo-APP/"
+                class="btn"
+                target="_blank"
+                >Code</a
+              >
+            </div>
+          </div>
         </div>
+        <button class="arrow right-arrow" onclick="moveRight()">
+          &#10095;
+        </button>
+      </div>
 
-        <h3>Advanced Projects</h3>
-        <p>Will be added soon</p>
+      <h3>Intermediate Level Projects</h3>
+      <div class="project-grid">
+        <button class="arrow left-arrow" onclick="moveLeft()">&#10094;</button>
+        <div class="project-container">
+          <div class="project-card">
+            <img src="images/project8.jpg" alt="Project 8" />
+            <h3>Tic Tac Toe Game</h3>
+            <p>
+              This is a simple yet fun Tic Tac Toe game created using HTML, CSS,
+              and JavaScript. The game allows players to choose between playing
+              against a computer AI or a local player.
+            </p>
+            <div class="btn-container">
+              <a
+                href="https://muditgupta07.github.io/Tic-Tac-Toe-Game/"
+                class="btn"
+                target="_blank"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/muditgupta07/Tic-Tac-Toe-Game"
+                class="btn"
+                target="_blank"
+                >Code</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="images/project9.jpg" alt="Project 9" />
+            <h3>VirtuPet</h3>
+            <p>
+              VirtuPet is an interactive virtual pet experience designed to
+              promote emotional well-being and mindfulness. With a dynamic 3D
+              environment and mood-based interactions, VirtuPet offers users a
+              fun and supportive way to care for a virtual companion while
+              tracking their own mental health.
+            </p>
+            <div class="btn-container">
+              <a
+                href="https://muditgupta07.github.io/VirtuPet/"
+                class="btn"
+                target="_blank"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/MuditGupta07/VirtuPet"
+                class="btn"
+                target="_blank"
+                >Code</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="images/project10.jpg" alt="Project 10" />
+            <h3>HealthyPlate</h3>
+            <p>
+              A smart, AI-driven recipe recommendation system tailored for your
+              health needs!This project is an AI-powered recipe generator that
+              suggests healthy meals based on medical conditions, allergies, and
+              dietary preferences. It integrates AI, nutrition APIs, and user
+              health data to ensure every meal aligns with individual health
+              requirements.
+            </p>
+            <div class="btn-container">
+              <a
+                href="https://health-meal-ai-guide.vercel.app/"
+                class="btn"
+                target="_blank"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/MuditGupta07/health-meal-ai-guide"
+                class="btn"
+                target="_blank"
+                >Code</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="images/project11.jpg" alt="Project 11" />
+            <h3>BudgetBuddy</h3>
+            <p>
+              Budget Buddy is a lightweight, browser-based expense tracker built
+              using HTML, CSS, and JavaScript—designed specifically for students
+              like Raghav who want a clean and simple way to manage their income
+              and expenses. No sign-up, no server, and no complexity—just open
+              your browser and take control of your money!
+            </p>
+            <div class="btn-container">
+              <a
+                href="https://muditgupta07.github.io/BudgetBuddy/"
+                class="btn"
+                target="_blank"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/MuditGupta07/BudgetBuddy"
+                class="btn"
+                target="_blank"
+                >Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <button class="arrow right-arrow" onclick="moveRight()">
+          &#10095;
+        </button>
+      </div>
+
+      <h3>Advanced Projects</h3>
+      <p>Will be added soon</p>
     </section>
 
     <section id="skills" class="skills fade-in">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-item">
-                <i class="fab fa-python" style="color: #3776AB;"></i>
-                <p>Python</p>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-code" style="color: #A8B9CC;"></i>
-                <p>C Programming Language</p>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-code" style="color: #00599C;"></i>
-                <p>C++</p>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-html5" style="color: #E34F26;"></i>
-                <i class="fab fa-css3-alt" style="color: #1572B6;"></i>
-                <p>HTML & CSS</p>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-js" style="color: #F7DF1E;"></i>
-                <p>JavaScript</p>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-robot" style="color: #00A67E;"></i>
-                <p>ChatGPT</p>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-github" style="color: #181717;"></i>
-                <p>GitHub</p>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-react" style="color: #61DAFB;"></i>
-                <p>React</p>
-            </div>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <i class="fab fa-python" style="color: #3776ab"></i>
+          <p>Python</p>
         </div>
+        <div class="skill-item">
+          <i class="fas fa-code" style="color: #a8b9cc"></i>
+          <p>C Programming Language</p>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-code" style="color: #00599c"></i>
+          <p>C++</p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-html5" style="color: #e34f26"></i>
+          <i class="fab fa-css3-alt" style="color: #1572b6"></i>
+          <p>HTML & CSS</p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-js" style="color: #f7df1e"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-robot" style="color: #00a67e"></i>
+          <p>ChatGPT</p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-github" style="color: #181717"></i>
+          <p>GitHub</p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-react" style="color: #61dafb"></i>
+          <p>React</p>
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="contact fade-in">
-        <h2>Contact</h2>
-        <p style="font-size: x-large;">If you would like to get in touch, please email me at:</p>
-        <a href="mailto:muditg782005@gmail.com" class="btn"><i class="fa-solid fa-square-envelope"></i></a>
+      <h2>Contact</h2>
+      <p style="font-size: x-large">
+        If you would like to get in touch, please email me at:
+      </p>
+      <a href="mailto:muditg782005@gmail.com" class="btn"
+        ><i class="fa-solid fa-square-envelope"></i
+      ></a>
     </section>
 
     <footer>
-        <p>&copy; 2025 Mudit Gupta. All rights reserved.</p>
-        <div class="social-icons">
-            <a href="https://github.com/MuditGupta07" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/mudit-gupta-249677294/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://x.com/MuditGupta541" target="_blank"><i class="fab fa-twitter"></i></a>
-        </div>
+      <p>&copy; 2025 Mudit Gupta. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://github.com/MuditGupta07" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/mudit-gupta-249677294/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://x.com/MuditGupta541" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
